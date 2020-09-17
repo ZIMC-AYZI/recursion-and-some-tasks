@@ -1,0 +1,77 @@
+.container {
+  width: 285px;
+  margin: 0 auto;
+}
+.top-part {
+}
+.top-content {
+  background-image: url(../images/top-part.jpg);
+  background-repeat: no-repeat, repeat-x;
+  width: 276px;
+  height: 80px;
+}
+.display-part {
+  display: flex;
+  width: 276px;
+}
+.left-side {
+  width: 31%;
+  height: 56px;
+  background-color: #000;
+}
+.right-side {
+  width: 31%;
+  height: 56px;
+  background-color: #000;
+}
+.display {
+  background-image: url(../images/display.jpg);
+  background-repeat: no-repeat, repeat-x;
+  height: 56px;
+  width: 105px;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 276px;
+  height: 130px;
+  background-color: #000;
+}
+button {
+  width: 50px;
+  height: 23px;
+  background-color: #242748;
+  font-size: 5px;
+  font-family: BowlbyOneSC;
+  color: #747999;
+}
+.menu-list-left {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item-left {
+  display: flex;
+  position: relative;
+}
+.menu-item-left::after {
+  position: absolute;
+  content: "";
+  background: url("../images/icon2.png") no-repeat, repeat-x;
+  width: 16px;
+  height: 16px;
+  right: -40%;
+  top: 10%;
+}
+.menu-item-right {
+  display: flex;
+  position: relative;
+}
+.menu-item-right::after {
+  position: absolute;
+  content: "";
+  background: url("../images/icon.svg") no-repeat, repeat-x;
+  width: 16px;
+  height: 16px;
+  left: -40%;
+  top: 10%;
+}
